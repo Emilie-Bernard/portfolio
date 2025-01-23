@@ -59,7 +59,7 @@ const experiences: ExperienceItem[] = [
         ]
     }, {
         title: "Python Developer",
-        company: "Direction Générale de l'armement",
+        company: "Direction Générale de l&apos;armement",
         period: "2021",
         description: [
             "Develop an application to help calculate zone of potential impact",
@@ -144,20 +144,20 @@ const TimelineCard = ({ experience, index }: { experience: ExperienceItem; index
                     initial="hidden"
                     animate={inView ? "visible" : "hidden"}
                 >
-                    <Card elevation={3} className="p-4 hover:shadow-lg transition-shadow duration-300">
-                        <Typography variant="h6" component="h3">
+                    <Card className="p-4 hover:shadow-lg transition-shadow duration-300">
+                        <Typography variant="h3">
                             {experience.title}
                         </Typography>
-                        <Typography variant="subtitle1" className="text-primary font-bold">
+                        <Typography className="text-primary font-bold">
                             {experience.company}
                         </Typography>
-                        <Typography variant="subtitle2" color="textSecondary">
+                        <Typography color="textSecondary">
                             {experience.period}
                         </Typography>
                         <ul className="mt-2">
                             {experience.description.map((point, idx) => (
                                 <li key={idx}>
-                                    <Typography variant="body2">
+                                    <Typography>
                                         {point}
                                     </Typography>
                                 </li>

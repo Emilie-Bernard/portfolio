@@ -38,7 +38,7 @@ const HomePage = () => {
                 >
                     As an expert in the React and Node stack, I can take over and drive 
                     your project from start to finish.
-                    And if you're using a different stack, no worries—I'm proficient in various 
+                    And if you&apos;re using a different stack, no worries—I&apos;m proficient in various 
                     technologies and can seamlessly integrate new components into your existing setup.
                 </Typography>
 
