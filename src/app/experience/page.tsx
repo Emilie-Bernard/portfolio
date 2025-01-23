@@ -54,7 +54,7 @@ const ProjectPage: FC = () => {
             </motion.div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {projects.map((project, index) => (
-                    <Card key={index} elevation={3} className="p-4 hover:shadow-lg border-none transition-shadow duration-300 bg-primary">
+                    <Card key={index} className="p-4 hover:shadow-lg border-none transition-shadow duration-300 bg-primary">
                         {project.imageUrl && (
                             <div className="h-48 overflow-hidden">
                                 <img 
