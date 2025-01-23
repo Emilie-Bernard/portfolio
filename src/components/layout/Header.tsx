@@ -14,7 +14,7 @@ const Header = () => {
             >
                 <Image 
                     unoptimized={true}
-                    src={`${process.env.WEBSITE_URL}/images/background.png`}
+                    src="/images/background-min.png" 
                     alt="background" 
                     width={1920} 
                     height={1080} 
