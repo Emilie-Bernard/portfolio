@@ -6,7 +6,7 @@ export default function Whoiam() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between bg-white">
       <Typography variant="pagename" className="text-primary z-10">WHO I AM</Typography>
-      <Image src="/images/whoiam3.jpg" alt="emiliebernard" className="-mt-[60px] z-0" width="1920" height="980" />
+      <Image src="/images/whoiam.jpg" alt="emiliebernard" className="-mt-[60px] z-0" width="1920" height="980" />
       <TextAnimate />
 
       {/* SEWING Section */}
