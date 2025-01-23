@@ -13,6 +13,7 @@ const Header = () => {
                 className="absolute inset-0"
             >
                 <Image 
+                    unoptimized={true}
                     src="/images/background.png" 
                     alt="background" 
                     width={1920} 
