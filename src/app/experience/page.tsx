@@ -31,7 +31,8 @@ const projects: Project[] = [
         title: "Portfolio",
         description: "My portfolio is a portfolio website that allows users to know more about me. It is built with Next.js, TypeScript, Tailwind CSS, and up on Vercel.",
         technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
-        liveUrl: "https://portfolio.vercel.app"
+        liveUrl: "https://portfolio-emiliebernards-projects.vercel.app/",
+        githubUrl: "https://github.com/Emilie-Bernard/portfolio"
     },
     {
         title: "Miss France 2024",
