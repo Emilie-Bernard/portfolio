@@ -1,35 +1,63 @@
-import Link from 'next/link';
-import { ThemeToggle } from '../theme/ThemeToggle';
-import { Typography } from '../ui/typography';
-import { Logo } from '../../assets/logo';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
 
-export function Header() {
+
+const Header = () => {
     return (
-        <header className="bg-background sticky top-0 z-40 w-full bg-primary text-secondary">
-            <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
-                <div className="flex gap-6 md:gap-10">
-                    <div className="flex justify-center items-center">
-                        <Link href='/'>
-                            <Logo color="#F9F9F9" width={100} height={70}/>
-                        </Link>
-                    </div>
-                </div>
+        <div className="relative w-full h-screen overflow-hidden">
+            {/* Background image with subtle zoom effect */}
+            <motion.div
+                initial={{ scale: 1.1 }}
+                animate={{ scale: 1 }}
+                transition={{ duration: 2 }}
+                className="absolute inset-0"
+            >
+                <Image 
+                    src="/images/background.png" 
+                    alt="background" 
+                    width={1920} 
+                    height={1080} 
+                    className="absolute inset-0 w-full h-full object-cover opacity-90"
+                    priority
+                />
+            </motion.div>
 
-                <div className="flex flex-1 items-center justify-end space-x-4">
-                    <nav className="flex items-center space-x-1 gap-6">
-                        <Typography variant="base" as={Link} href="/experience">
-                            Experience
-                        </Typography>
-                        <Typography variant="base" as={Link} href="/whoiam">
-                            Who I Am
-                        </Typography>
-                        <Typography variant="base" as={Link} href="/timeline">
-                            Timeline
-                        </Typography>
-                        <ThemeToggle />
-                    </nav>
-                </div>
-            </div>
-        </header>
-    );
+            {/* Content container with animation */}
+            <motion.div 
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="absolute left-0 top-0 w-1/2 h-full p-16 flex flex-col items-start justify-center gap-8"
+            >
+                {/* Name SVG with subtle hover effect */}
+                <motion.div
+                    whileHover={{ scale: 1.02 }}
+                    transition={{ duration: 0.2 }}
+                >
+                    <Image 
+                        src="/images/name.svg" 
+                        alt="emilie bernard" 
+                        width={1000} 
+                        height={300} 
+                        className="drop-shadow-2xl"
+                        priority
+                    />
+                </motion.div>
+
+                {/* Role title with gradient */}
+                <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.5 }}
+                    className="relative"
+                >
+                    <h2 className="text-4xl font-bold tracking-wider bg-gradient-to-r from-white via-white to-white/70 text-transparent bg-clip-text">
+                        FULLSTACK DEVELOPER
+                    </h2>
+                </motion.div>
+            </motion.div>
+        </div>
+    )
 }
+
+export default Header;

@@ -21,6 +21,7 @@ type PolymorphicProps<E extends ElementType> = PropsWithChildren<
 const typographyVariants = cva('', {
   variants: {
     variant: {
+      pagename: 'scroll-m-20 text-9xl font-sans font-extrabold tracking-tight',
       h1: 'scroll-m-20 text-4xl font-sans font-extrabold tracking-tight lg:text-5xl',
       h2: 'scroll-m-20 border-b font-sans pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0',
       h3: 'scroll-m-20 text-xl font-sans font-semibold tracking-tight',
@@ -48,6 +49,7 @@ const defaultElementMapping: Record<
   NonNullable<TypographyCvaProps['variant']>,
   ElementType
 > = {
+  pagename: 'h1',
   h1: 'h1',
   h2: 'h2',
   h3: 'h3',

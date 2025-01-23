@@ -1,112 +1,60 @@
+import { Typography } from "@/components/ui/typography";
+import TextAnimate from "./TextAnimate";
 import Image from "next/image";
 
-export default function Home() {
+export default function Whoiam() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="flex min-h-screen flex-col items-center justify-between bg-white">
+      <Typography variant="pagename" className="text-primary z-10">WHO I AM</Typography>
+      <Image src="/images/whoiam3.jpg" alt="emiliebernard" className="-mt-[60px] z-0" width="1920" height="980" />
+      <TextAnimate />
+
+      {/* SEWING Section */}
+      <div className="w-full max-w-4xl px-4 py-8">
+        <Typography variant="h1" className="text-primary mb-4">
+          SEWING
+        </Typography>
+        <Typography className="text-primary mb-6">
+          I started sewing in 2022. For my family, friends and me. I get my french NVQ (CAP) in both exam MMVF in 2023 and MMVT in 2024. I open my blog in start 2025.
+        </Typography>
+        <div className="grid grid-cols-3 gap-4 mb-8">
+          <Image src="/images/sewing1.png" alt="Sewing creation 1" width={300} height={300} className="rounded-lg h-[300px] w-[300px]" />
+          <Image src="/images/sewing2.png" alt="Sewing creation 2" width={300} height={300} className="rounded-lg h-[300px] w-[300px]" />
+          <Image src="/images/sewing3.jpg" alt="Sewing creation 3" width={300} height={300} className="rounded-lg h-[300px] w-[300px]" />
         </div>
+        <a href="https://instagram.com/atelier.ebee" className="text-primary hover:underline">More on Instagram</a>
+        <a href="https://atelierebee.com" className="ml-6 text-primary hover:underline">Blog</a>
       </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      {/* TRANSLATION Section */}
+      <div className="w-full max-w-4xl px-4 py-8 bg-gray-50">
+        <Typography variant="h1" className="text-primary mb-4">
+          TRANSLATION
+        </Typography>
+        <Typography className="text-primary mb-6">
+          Since I was in Junior School I watch Asian Drama. In 2016 I started translating some of them from english to french on Rakuten Viki. Then I started being a French moderator who manage the french team.
+        </Typography>
+        <div className="grid grid-cols-3 gap-4 mb-8">
+          <Image src="/images/drama1.png" alt="Drama 1" width={300} height={300} className="rounded-lg h-[300px] w-[300px]" />
+          <Image src="/images/drama2.png" alt="Drama 2" width={300} height={300} className="rounded-lg h-[300px] w-[300px]" />
+          <Image src="/images/drama3.png" alt="Drama 3" width={300} height={300} className="rounded-lg h-[300px] w-[300px]" />
+        </div>
+        <a href="https://www.viki.com/users/bearimnal/overview" className="text-primary hover:underline">View my Viki profile</a>
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      {/* READING Section */}
+      <div className="w-full max-w-4xl px-4 py-8">
+        <Typography variant="h1" className="text-primary mb-4">
+          READING
+        </Typography>
+        <Typography className="text-primary mb-6">
+          I am passionate about personal development and enjoy reading books on the subject to continuously improve myself. In 2020, I delved into numerous personal development books. I also have a keen interest in new romance novels and have a particular fondness for the thrillers of J.R. Dos Santos.
+        </Typography>
+        <div className="grid grid-cols-3 gap-4">
+          <Image src="/images/book1.jpg" alt="Book 1" width={300} height={300} className="rounded-lg h-[300px] w-[300px]" />
+          <Image src="/images/book2.jpg" alt="Book 2" width={300} height={300} className="rounded-lg h-[300px] w-[300px]" />
+          <Image src="/images/book3.jpg" alt="Book 3" width={300} height={300} className="rounded-lg h-[300px] w-[300px]" />
+        </div>
       </div>
     </main>
   );

@@ -1,4 +1,4 @@
 export const SiteConfig = {
-    title: 'Portfolio',
+    title: 'Portfolio Emilie Bernard',
     description: 'Discover my technicals skills.',
   } as const;

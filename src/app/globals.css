@@ -32,11 +32,11 @@
   }
 
   .dark {
-    --background: 0 0% 3.9%;
+    --background: #493535;
     --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
+    --card: #493535;
     --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
+    --popover: #493535;
     --popover-foreground: 0 0% 98%;
     --primary: 0 0% 98%;
     --primary-foreground: 0 0% 9%;
@@ -67,3 +67,20 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Supprimer ou commenter les anciennes animations */
+/* @keyframes slideLeft {
+    ...
+}
+
+@keyframes slideRight {
+    ...
+}
+
+.slide-left {
+    ...
+}
+
+.slide-right {
+    ...
+} */

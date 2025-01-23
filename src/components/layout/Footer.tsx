@@ -5,7 +5,7 @@ import { Logo } from '../../assets/logo';
 
 export const Footer = () => {
     return (
-        <footer className="w-full border-t border-card bg-primary text-secondary">
+        <footer className="w-full border-card bg-primary text-secondary">
             <div className="m-auto w-full flex flex-col max-w-5xl gap-3 px-2 py-4">
                 <div className="flex justify-center items-center">
                     <Logo color="#f9F9F9" width={300} height={150}/>
@@ -18,8 +18,8 @@ export const Footer = () => {
                         <Typography variant="base" as={Link} href="/">
                             Home
                         </Typography>
-                        <Typography variant="base" as={Link} href="/experience">
-                            Experience
+                        <Typography variant="base" as={Link} href="/projects">
+                            Projects
                         </Typography>
                         <Typography variant="base" as={Link} href="/timeline">
                             Timeline
